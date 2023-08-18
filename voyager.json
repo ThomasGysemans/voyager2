@@ -1,0 +1,1263 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "default",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "6e09b2a6-ab08-4ebe-a895-37dcac43fcad",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Voyager 2",
+    "description": "",
+    "author": "",
+    "windowWidth": 1920,
+    "windowHeight": 1080,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [
+      "gI6Mlm0vRbOHPGuJIR3h3wxl5Zn2"
+    ],
+    "authorUsernames": [
+      "thomas_gysemans"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/030a256d0089ea24bd4f2262ab361ce08510311c3fa285a2af6951a68e50bf57_Earth Like Planet_1.png",
+          "name": "Earth Like Planet_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_10.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/039eaa79cf2a39abf59226fcf84a626d803199f18d92a17b13059dbfe735825c_Earth Like Planet_10.png",
+          "name": "Earth Like Planet_10.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_11.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/e089e6ea5a8bd3ae2656a4dc7848379ad5dd6430e941fb925d0b531c1a08d7a4_Earth Like Planet_11.png",
+          "name": "Earth Like Planet_11.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_12.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/09e8a1f87dc3689205edb460d8900d367efbb2164faa1721424c21e45f96df9a_Earth Like Planet_12.png",
+          "name": "Earth Like Planet_12.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_13.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/f574b02b74af105b8c9093e067d013a651ab9445d96fc1f1838a2f331797d95e_Earth Like Planet_13.png",
+          "name": "Earth Like Planet_13.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_14.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/41fcefb46763e94ce29d9b8748a2ccfde0dc4627eb75387317bfce5c3d643fe5_Earth Like Planet_14.png",
+          "name": "Earth Like Planet_14.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_15.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/44b4ac4f66ef46e3459497516364c0be29e96135b7288206cca7d00728af7c72_Earth Like Planet_15.png",
+          "name": "Earth Like Planet_15.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_16.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/6484a1d82dd8fea74b0938d38eb165fcf0c2885eaf7c1a642377d545c7b4f79d_Earth Like Planet_16.png",
+          "name": "Earth Like Planet_16.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_17.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/2ac4695ed6191cf297abb362f32a1d881afd2759c259924c4b6b2c52df58c55d_Earth Like Planet_17.png",
+          "name": "Earth Like Planet_17.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_18.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/807e9db8d8a266eba97a18fa3d6682b28d48ba240d3d421ef4c6eacf22a0faec_Earth Like Planet_18.png",
+          "name": "Earth Like Planet_18.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_19.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/0383391c5ce261c6e4f3d4cde1adb621881d1d46524b33fdd33bd9330e1f5ccd_Earth Like Planet_19.png",
+          "name": "Earth Like Planet_19.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/fee3ae7e9be673862d084304d5a8e7896030c1165479bff75dcd4998fa9b64e2_Earth Like Planet_2.png",
+          "name": "Earth Like Planet_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_20.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/058565c577f20478ba2d831f6b01351c2587e425d3695b9f576a96c5a4e669be_Earth Like Planet_20.png",
+          "name": "Earth Like Planet_20.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_21.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/00a54c3fd6c09933653ea5a8a557e1f3006baf2db56f9d8e5275fbdd5ab6b72e_Earth Like Planet_21.png",
+          "name": "Earth Like Planet_21.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_22.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/a6c69cff0d205aa44ec06aa71b4701e8634ee663f6d18b4c6fe443eca24e487f_Earth Like Planet_22.png",
+          "name": "Earth Like Planet_22.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_23.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/e4f874e08550854633b37346b91753f7904634e41308a7eba2df794bdcf9e90a_Earth Like Planet_23.png",
+          "name": "Earth Like Planet_23.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_24.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/780d9fed88a45be78475ab2f0ecddfe9b318d7a804ae779f99fd1d82924ef097_Earth Like Planet_24.png",
+          "name": "Earth Like Planet_24.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_25.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/6a91fc008f536eb64fee169d5c31f64202396138075847a3612b5db4490593c1_Earth Like Planet_25.png",
+          "name": "Earth Like Planet_25.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_26.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/4bfa967b6389b1c43017e50bbfe749889082048b8ff4a4beaaaf0b9ade38019a_Earth Like Planet_26.png",
+          "name": "Earth Like Planet_26.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_27.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/6ffb992366508ba01bf17c4d4f7dc34437b9b355508500914782e544c27a6271_Earth Like Planet_27.png",
+          "name": "Earth Like Planet_27.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_28.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/2dc6f3220777b051e2288b4aed9b0357f3c759149e251f7e407e487dca8b209d_Earth Like Planet_28.png",
+          "name": "Earth Like Planet_28.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_29.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/0401f1dd9c96c8a6a3068d958c78db475358a99c41f38841ac280c0aac12cc0f_Earth Like Planet_29.png",
+          "name": "Earth Like Planet_29.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/d944b58a48c6fa47229a0b456d703c47683024f7b44df723b3b95dc86bf57c8c_Earth Like Planet_3.png",
+          "name": "Earth Like Planet_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_30.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/226c1e99d2bfbd31edf69a34f7446150e2db309eff75d8bab635cba2781252b3_Earth Like Planet_30.png",
+          "name": "Earth Like Planet_30.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_31.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/e133b35acc0b9e072c3b969923038e39a40a1ce72b36e29d8341eac71125687d_Earth Like Planet_31.png",
+          "name": "Earth Like Planet_31.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_32.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/9a18c93c66a28a4cc6e0fdadd26a832f3d6fe59214159a4214b4d4563a0e8b39_Earth Like Planet_32.png",
+          "name": "Earth Like Planet_32.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_33.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/2b394d4ce1a29c1af9ed27c45491ac3d66c4d8d2e8cae5dd282b2e06e2d0b43b_Earth Like Planet_33.png",
+          "name": "Earth Like Planet_33.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_34.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/4a63bc86ca9f38e2bab9021b2c3731e8dc4fad3967bb54fd0f49a44b5090a07b_Earth Like Planet_34.png",
+          "name": "Earth Like Planet_34.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_35.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/449148d7ee6919cf7ed41d0a7b1ebb6f02b9cff8ae4339227c67918aa3cf3856_Earth Like Planet_35.png",
+          "name": "Earth Like Planet_35.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_36.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/abddec96a3f36bb933f6a06fc458fb8fa6f7a589704b3f5e6493c6fa505ea48d_Earth Like Planet_36.png",
+          "name": "Earth Like Planet_36.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_37.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/31988a81c99ce932ee6e17dc2e03c8adcdfaa2c97587c84fad4fd83ce1c7a529_Earth Like Planet_37.png",
+          "name": "Earth Like Planet_37.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_38.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/3160726a0eea295cc383c6e895ed0016fd3f2df2436a8975fb09b8b7254d481e_Earth Like Planet_38.png",
+          "name": "Earth Like Planet_38.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_39.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/ef6bf824edca15163992a5a5ad70941437363f7ac9fa64ef16493867c4860217_Earth Like Planet_39.png",
+          "name": "Earth Like Planet_39.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/d9abc465a68d8dd62ebb34ff79f6409e3db72bd95a73f34f757bbb057742fc66_Earth Like Planet_4.png",
+          "name": "Earth Like Planet_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_40.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/4543f34ef3f28a7697cf3a270284f3b277c24370c6e2da4c443ac45171e58c57_Earth Like Planet_40.png",
+          "name": "Earth Like Planet_40.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_41.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/e60bbe3598cdd279b3c0dedde130489d137a040acb4169478febfe5712e2c277_Earth Like Planet_41.png",
+          "name": "Earth Like Planet_41.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_42.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/b5a4889d3f4cea438ea1e3ee1e03a5d5fe49434d0e3047fa400d7b8ad3c630de_Earth Like Planet_42.png",
+          "name": "Earth Like Planet_42.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_43.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/db3d428306c96d4740e923153622b63f4d9bd2f779a63e4a4cfa4d9cd22ba29d_Earth Like Planet_43.png",
+          "name": "Earth Like Planet_43.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_44.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_44.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/51db98c45153e567bbf0e010e39e9f16f2f4f6c074cb33e4465f0ea34e7043b9_Earth Like Planet_44.png",
+          "name": "Earth Like Planet_44.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_45.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_45.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/834fe7945087707c2759a511736fdee8e9d1a199560ebeafae8306ab5c638f91_Earth Like Planet_45.png",
+          "name": "Earth Like Planet_45.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_46.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/68398d1d5ec04644e09fb8432ed6c6c0a206b72ce02597cadd88fe3a38a59e8c_Earth Like Planet_46.png",
+          "name": "Earth Like Planet_46.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_47.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_47.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/99773c4ff69a1c4847e39bd6e8a405fa3e6de162af45ba063b9817c4fece6030_Earth Like Planet_47.png",
+          "name": "Earth Like Planet_47.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_48.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/3a54369db174dfecd97548b0c4ea0a7ad5f8aa5e6fc62fdede770863346ad8b6_Earth Like Planet_48.png",
+          "name": "Earth Like Planet_48.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_49.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/ef4a4d026b97d0d189c02c474d11ae78613d48ab24273c51e61b34a283824c11_Earth Like Planet_49.png",
+          "name": "Earth Like Planet_49.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/8abc87d9b94b77b861291ee706c946eb46135f40c085d137bb98bd2f60d4cf3e_Earth Like Planet_5.png",
+          "name": "Earth Like Planet_5.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_50.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/7df421a221e5c09ea6d3f9f8d4c239503bbed01392072c1f3efe01112cbd6131_Earth Like Planet_50.png",
+          "name": "Earth Like Planet_50.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_51.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_51.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/0533101334ee78051dbc5781648bed754920902c193deef8edf8ef0ae65c6685_Earth Like Planet_51.png",
+          "name": "Earth Like Planet_51.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_52.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_52.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/dc60046ff64feb27b0c908818eb07e3ef3f703804f37bc0524555e15ad6fbc75_Earth Like Planet_52.png",
+          "name": "Earth Like Planet_52.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_53.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_53.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/1e51becef8ec286e31ece6d7f5a747e85061fa73c2fe0bd9aefbfded5a432806_Earth Like Planet_53.png",
+          "name": "Earth Like Planet_53.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_54.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_54.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/6c7ab9a23cb6c463fff68f82c1716297db0e6b50015a768a7a944b73c8d4d41c_Earth Like Planet_54.png",
+          "name": "Earth Like Planet_54.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_55.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_55.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/87859087aefed50382305a429c52fc558739cee32839ae8a3e38b0117279a752_Earth Like Planet_55.png",
+          "name": "Earth Like Planet_55.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_56.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_56.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/eaa20ba3d558665f2c4d11ecba885712a6c2cff2f0b24bee75670d6ea73d8cd5_Earth Like Planet_56.png",
+          "name": "Earth Like Planet_56.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_57.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/89254f03ff7c795e4779cf78fc7fcbcaab897b83bebcff2852c48e3c92fe25f3_Earth Like Planet_57.png",
+          "name": "Earth Like Planet_57.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_58.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/cf4f4641b388cbb738ae7097f64b0d1322aeba63c01fe3445fdce5b0f8f156ed_Earth Like Planet_58.png",
+          "name": "Earth Like Planet_58.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_59.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_59.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/ce081d530e9f32b8b4d00146ecf1877381f12c60bec13623d0c17c8f6fa8380f_Earth Like Planet_59.png",
+          "name": "Earth Like Planet_59.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/7b6a57a0e53b3c857ba4b57e60b7b77b6a16842eb73bc26f7584046c788b706c_Earth Like Planet_6.png",
+          "name": "Earth Like Planet_6.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_60.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/914accab673f29ccc1123a8c1ae5e2a4d8ea535e5fb56d233a72dee56e2d1172_Earth Like Planet_60.png",
+          "name": "Earth Like Planet_60.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_61.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_61.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/4bc2c1c7fbac2b71e93c2aa9a2b91fec8395f6034da6478a793a39dd5c85c847_Earth Like Planet_61.png",
+          "name": "Earth Like Planet_61.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_62.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_62.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/4ceb742bfb48836c0dd8b3cdebfa32bb172dd9260f2d07a5b1025ffa5127fc48_Earth Like Planet_62.png",
+          "name": "Earth Like Planet_62.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_63.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_63.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/bc0a3446e53bbc7a7cf1fa14b7e6efc9a65958941e1379673461e5137fe1af23_Earth Like Planet_63.png",
+          "name": "Earth Like Planet_63.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_64.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/fda4a5776c2e78135e18d5c5529cd40e92e2a5c4d07e4dab2df95f38911a7395_Earth Like Planet_64.png",
+          "name": "Earth Like Planet_64.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_65.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_65.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/ed22ff417f185bac77a488e21e4425f6e4ff4679e7dac2e7ac8bdb7f9fc0d02b_Earth Like Planet_65.png",
+          "name": "Earth Like Planet_65.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_66.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_66.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/7b2c8a6d5826b64850e9664707eebde04d4de0d2bfa91f22db46e50b305ddb95_Earth Like Planet_66.png",
+          "name": "Earth Like Planet_66.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_67.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_67.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/789c84fecf9477beca0090b41eb35dc0c3f5a1d90b31ff249e9b1be3eabe852c_Earth Like Planet_67.png",
+          "name": "Earth Like Planet_67.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_68.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_68.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/9b055e654675f334bd11029254bce0acec779eb824b16432db783425feeb6d9d_Earth Like Planet_68.png",
+          "name": "Earth Like Planet_68.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_69.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_69.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/3ea06af330734b78415298bd6b753f3597f0748e18b686f4a2bbeb1709c48ae3_Earth Like Planet_69.png",
+          "name": "Earth Like Planet_69.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/6e21cb3472245970ae3c729e73c4bf1d79dfb5002c608d89c2d9a9ab0873bf7c_Earth Like Planet_7.png",
+          "name": "Earth Like Planet_7.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_70.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_70.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/c9cc02aa3d2f2dc0018e6822349ea5f1ca467c12ae5aca7b4a0701212af17656_Earth Like Planet_70.png",
+          "name": "Earth Like Planet_70.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_71.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_71.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/2ad06555fc4142740cffb31fee58c2fe67cf07f7ba700657fa3f6df097e18399_Earth Like Planet_71.png",
+          "name": "Earth Like Planet_71.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_72.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/b92c2a902aebb3537afe9946c28587cfeae4ea41e6db76d1c54d8179a45d95c3_Earth Like Planet_72.png",
+          "name": "Earth Like Planet_72.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_73.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_73.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/af2c5b68962868d4e9b5f3948a60151e59a0031a172d4c76d9e5747b11d94938_Earth Like Planet_73.png",
+          "name": "Earth Like Planet_73.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_74.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_74.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/706422068b1f81108e9f22d80cc69a2d7cc2007785bd1d84a24e2891e2fdf918_Earth Like Planet_74.png",
+          "name": "Earth Like Planet_74.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_75.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_75.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/69d737bcd190730a8db423647ce403fc9adc5b4f0931faf23f3e19037436db2f_Earth Like Planet_75.png",
+          "name": "Earth Like Planet_75.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_76.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/b09dfa116c92dd52888df5f8165d9ad1575bb6652340287875e7b4a500d3daf9_Earth Like Planet_76.png",
+          "name": "Earth Like Planet_76.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_77.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_77.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/ab201448b053f92447f16fc1aebbadfb0088ae18fc956553d88be8ea40e0a52d_Earth Like Planet_77.png",
+          "name": "Earth Like Planet_77.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/c5d6fd54e38c3229dd521ffbb5f65df46bb97d0986adca525cfd0c17c0a4439f_Earth Like Planet_8.png",
+          "name": "Earth Like Planet_8.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Earth Like Planet_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Earth Like Planet_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/adadd23461ff8d06dd76ddc1eafae35ca234df11a4ae7b59955275de72a2ce97_Earth Like Planet_9.png",
+          "name": "Earth Like Planet_9.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Star_Medium.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "star.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Simple Space/stars/c63d293cbe8c34d2414055b5bbba042be067665388b79ba85eb3ad8d538f2524_Star_Medium.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CORRECTMERCURY.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CORRECTMERCURY.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/38effd29660d15263cf190c39f5a4600e934d9771d5dc931b1fbedb8b3eea6ae-CORRECTMERCURY.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mars.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mars.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/8aabc0a1bd137a83f01d53c9fb9bac5d494f7731580fb1cf5c61d601c302770c-mars.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Jupiter.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jupiter",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/saturn.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "saturn.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/03bad66b52b3ec8b1b74366900e8a689c3ff59f6e82f36b1f925831ca4c36d4f-saturn.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/uranus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "uranus.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/039b0ca3e1c2ab717f2c1c620ff35d383de51f207d116a57fbee8e42f1931fd9-uranus.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/neptune.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "neptune",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/pluto.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pluto.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/edcdd70758ac1566a8fe9e29a933cb90098e4107357b9606eb8f0645055f7ff8-pluto.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/new-venus.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "new-venus",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/moon-resized.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "moon-resized.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/69c9950498e610d50d50c2ee5106849f7b7b07e73cc4e70293733ea4db96b0c3-moon-resized.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sun.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/3aa7a9ffd2c11cd6736f5dc52872f418bdcd463926ea2959bfceefc13658aaaa-sun.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/spaceShips_008.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "spaceShips_008.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/d965223eb091f100bfc8283100c8906f2a45a2c8a19e073a1e2281d3de744fa7-spaceShips_008.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/flame.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flame.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/e7c92725-511e-41cf-8bfc-0069682f7057/resources/84511da73c98a4385c694eff5a5fd27ee69f22b337fbf4093a7ff56f7a0b8c16-flame.png",
+          "name": "cloud-project-resource"
+        }
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main-scene"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/orbitingobjects"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
