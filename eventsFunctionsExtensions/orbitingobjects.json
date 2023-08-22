@@ -1097,7 +1097,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Delete orbiting objects (if needed)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1212,7 +1211,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Move orbiting objects (always)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1639,6 +1637,854 @@
           "name": "ForegroundSide",
           "supplementaryInformation": "[\"Top\",\"Bottom\",\"Left\",\"Right\"]",
           "type": "stringWithSelector"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Move an animated object in elliptical orbit around a center object. Z-order is changed to make 3D effect.",
+      "fullName": "Move an animated object in elliptical orbit around a center object",
+      "functionType": "Action",
+      "name": "AnimateSingleEllipticalAnimatedOrbitingObject",
+      "sentence": "Animate one copy of _PARAM2_ (with animation _PARAM3_, of size _PARAM4_) in elliptical orbit around _PARAM1_ with vertical radius of _PARAM6_, horizontal radius of _PARAM10_ and an orbit speed of _PARAM5_ degrees per second. Foreground side is _PARAM11_. Rotate orbiting objects at _PARAM7_ degrees per second",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "CenterObject",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Create orbiting objects (if needed)",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "CenterObject",
+                        "alreadyExists",
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "OrbitingObject",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "OrbitingObject.AnimationName()",
+                            "=",
+                            "GetArgumentAsString(\"OrbitingObjectAnimation\")"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "CenterObject",
+                            "alreadyExists",
+                            "True"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "CenterObject",
+                        "alreadyExists",
+                        "False"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "CenterObject",
+                            "alreadyExists",
+                            "True"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Create orbiting object and link it to the center object, only if it doesn't already exist"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "OrbitingObject",
+                            "CenterObject.X()",
+                            "CenterObject.Y()",
+                            "CenterObject.Layer()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "GetArgumentAsString(\"OrbitingObjectAnimation\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetSize"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "OrbitingObject.Width()/OrbitingObject.Height()*GetArgumentAsNumber(\"Height\")",
+                            "GetArgumentAsNumber(\"Height\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "hRadius",
+                            "=",
+                            "GetArgumentAsNumber(\"HorizontalDistance\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "vRadius",
+                            "=",
+                            "GetArgumentAsNumber(\"VerticalDistance\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "orbitSpeed",
+                            "=",
+                            "GetArgumentAsNumber(\"OrbitSpeed\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "rotationSpeed",
+                            "=",
+                            "GetArgumentAsNumber(\"ObjectRotationSpeed\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "startingOffset",
+                            "=",
+                            "GetArgumentAsNumber(\"StartingOffset\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "OrbitingObject",
+                            "CenterObject"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "AnimationName"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "\"Earth\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Physics2::ShapeScale"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "Behavior",
+                                "=",
+                                "(OrbitingObject.Height()/2)/GetArgumentAsNumber(\"ReferenceShapeRadius\")"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Reassign OrbitOrder"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "CenterObject",
+                            "OrbitingObjects.OrderCounter",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "OrbitingObject",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "OrbitingObject",
+                            "CenterObject"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "OrbitOrder",
+                                "=",
+                                "CenterObject.Variable(OrbitingObjects.OrderCounter)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "CenterObject",
+                                "OrbitingObjects.OrderCounter",
+                                "+",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Match the angle used by the rest of the orbiting objects"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAngle"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "=",
+                                "CenterObject.Variable(OrbitingObjects.RotationAngle)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Spread out orbiting objects evenly"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "OrbitAngle",
+                            "=",
+                            "OrbitingObject.Variable(OrbitOrder) * 360 + OrbitingObject.Variable(startingOffset)"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Move orbiting objects (always)",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "OrbitingObject",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "OrbitingObject",
+                        "CenterObject"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Calculate new angle for this frame"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "OrbitAngle",
+                            "+",
+                            "OrbitingObject.Variable(orbitSpeed) * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Keep the angle between (0 to 360)"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "OrbitAngle",
+                            ">",
+                            "360"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "OrbitAngle",
+                            "=",
+                            "mod(OrbitingObject.Variable(OrbitAngle), 360)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Move object to new angle"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "=",
+                            "CenterObject.BoundingBoxCenterX() + XFromAngleAndDistance(OrbitingObject.Variable(OrbitAngle), OrbitingObject.Variable(hRadius))",
+                            "=",
+                            "CenterObject.BoundingBoxCenterY() + YFromAngleAndDistance(OrbitingObject.Variable(OrbitAngle), OrbitingObject.Variable(vRadius))"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Change angle of rotating objects"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Rotate"
+                          },
+                          "parameters": [
+                            "OrbitingObject",
+                            "OrbitingObject.Variable(rotationSpeed)",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Save the current angle so it can be used for new orbiting objects"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "CenterObject",
+                            "OrbitingObjects.RotationAngle",
+                            "=",
+                            "OrbitingObject.Angle()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Update Z order as it moves around the orbit",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Foreground = Bottom (Default)"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "CompareArgumentAsString"
+                                  },
+                                  "parameters": [
+                                    "\"ForegroundSide\"",
+                                    "=",
+                                    "\"\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CompareArgumentAsString"
+                                  },
+                                  "parameters": [
+                                    "\"ForegroundSide\"",
+                                    "=",
+                                    "\"Bottom\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "=",
+                                "CenterObject.ZOrder() + (OrbitingObject.BoundingBoxCenterY() - CenterObject.BoundingBoxCenterY())"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Foreground = Top"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareArgumentAsString"
+                              },
+                              "parameters": [
+                                "\"ForegroundSide\"",
+                                "=",
+                                "\"Top\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "=",
+                                "CenterObject.ZOrder() + (CenterObject.BoundingBoxCenterY() - OrbitingObject.BoundingBoxCenterY())"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Foreground = Left"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareArgumentAsString"
+                              },
+                              "parameters": [
+                                "\"ForegroundSide\"",
+                                "=",
+                                "\"Left\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "=",
+                                "CenterObject.ZOrder() + (CenterObject.BoundingBoxCenterX() - OrbitingObject.BoundingBoxCenterX())"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Foreground = Right"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareArgumentAsString"
+                              },
+                              "parameters": [
+                                "\"ForegroundSide\"",
+                                "=",
+                                "\"Right\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "OrbitingObject",
+                                "=",
+                                "CenterObject.ZOrder() + (OrbitingObject.BoundingBoxCenterX() - CenterObject.BoundingBoxCenterX())"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Center object",
+          "name": "CenterObject",
+          "type": "objectList"
+        },
+        {
+          "description": "Orbiting object",
+          "longDescription": "Cannot be the same object used for the Center object",
+          "name": "OrbitingObject",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "The animation of the orbiting object to start with",
+          "name": "OrbitingObjectAnimation",
+          "type": "string"
+        },
+        {
+          "description": "Height of the sprite, in pixels.",
+          "longDescription": "The aspect ratio will be preserved, and the width calculated based on the height and the size of the given animation.",
+          "name": "Height",
+          "type": "expression"
+        },
+        {
+          "description": "Orbit speed (in degrees per second)",
+          "longDescription": "Use negative numbers to orbit counter-clockwise",
+          "name": "OrbitSpeed",
+          "type": "expression"
+        },
+        {
+          "description": "Vertical distance from the center object (pixels)",
+          "name": "VerticalDistance",
+          "type": "expression"
+        },
+        {
+          "description": "Angular speed (in degrees per second)",
+          "longDescription": "Use negative numbers to rotate counter-clockwise",
+          "name": "ObjectRotationSpeed",
+          "type": "expression"
+        },
+        {
+          "description": "Starting angle offset (in degrees)",
+          "name": "StartingOffset",
+          "type": "expression"
+        },
+        {
+          "description": "Reset locations of orbiting objects after quantity is reduced",
+          "name": "ResetObjectsAfterDeletion",
+          "type": "yesorno"
+        },
+        {
+          "description": "Horizontal distance from the center object (pixels)",
+          "name": "HorizontalDistance",
+          "type": "expression"
+        },
+        {
+          "description": "Foreground Side",
+          "name": "ForegroundSide",
+          "supplementaryInformation": "[\"Top\",\"Bottom\",\"Left\",\"Right\"]",
+          "type": "stringWithSelector"
+        },
+        {
+          "description": "Behavior of the orbiting object.",
+          "name": "Behavior",
+          "supplementaryInformation": "Physics2::Physics2Behavior",
+          "type": "behavior"
+        },
+        {
+          "description": "Earth's body radius",
+          "longDescription": "The radius of the 2D collision shape of the Earth as reference for scaling the animation.",
+          "name": "ReferenceShapeRadius",
+          "type": "expression"
         }
       ],
       "objectGroups": []
