@@ -919,6 +919,26 @@
         "name": "better-saturn.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/sounds/ambiance-sound.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/ambiance-sound.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/fan-flying.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/fan-flying.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
